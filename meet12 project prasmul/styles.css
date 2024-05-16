@@ -1,0 +1,246 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    min-height: 200vh;
+    background-color: lightblue;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+/* HEADER */
+
+header .container{
+    justify-content: space-between;
+    height: 60px;
+    background-color: #00376a;
+}
+
+header .container .navheader{
+    width: 490px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container .navheader a{
+    font-size: 13px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: gray;
+}
+
+header .container .navheader a.btn{
+    display: inline-block;
+    background-color: rgb(61, 177, 102);
+    color: white;
+    font-weight: bold;
+    padding: 0 5px;
+    height: 60px;
+    width: 120px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* STICKY NAV */
+
+nav{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 999;
+}
+
+nav .container{
+    justify-content: space-between;
+    height: 91px;
+    background-color: white;
+}
+
+nav .container ul.sticky li.item{
+    display: inline-block;
+    list-style: none;
+    font-size: 13px;
+    margin-left: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+/* SECTION HERO */
+
+section.hero{
+    height: calc(100vh - 60px - 91px);
+    background-image:url(asset/Web-Banner-Japres-S1-2024-Universitas-Prasetiya-Mulya.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/* SECTION FACULTY */
+
+section.faculty {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 375px;
+    background-color: beige;
+    gap: 25px;
+    padding: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+section.faculty .itemfaculty .boxfaculty{
+    color: white;
+    font-weight: bolder;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+section.faculty .itemfaculty .boxfaculty.one{
+    background-color: rgb(25, 0, 248);
+}
+section.faculty .itemfaculty .boxfaculty.two{
+    background-color: rgb(255, 0, 0);
+}
+section.faculty .itemfaculty .boxfaculty.three{
+    background-color: rgb(220, 27, 27);
+}
+section.faculty div.itemfaculty{
+    background-color: beige;
+}
+
+/* SECTION ABOUT */
+section.about{
+    height: 1000px;
+    background-color: #00376a;
+    color: white;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 2fr  2fr;
+    grid-template-areas: 
+    "head head"
+    "side1 side2";
+}
+section.about .top{
+    font-size: 20px;
+    padding: 75px;
+    grid-area: head;
+}
+section.about .left{
+    font-size: 30px;
+    padding-left: 75px;
+    left: 100%;
+    grid-area: side1;
+}
+section.about .right{
+    font-size: 30px;
+    padding-right: 75px;
+    right: 100%;
+    grid-area: side2;
+}
+/* POINT OF VIEW */
+section.pov{
+    height: 500px;
+    position: relative;
+    text-align: center;
+    background-color: wheat;
+    font-weight: bold;
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+}
+section.pov h1{
+    font-size: 30px;
+}
+section.pov p{
+    font-size: 17px;
+}
+/* SECTION FLOATING IMG */
+section.pov section.floatingimg{
+    position: absolute;
+    bottom: 30px;
+    height: 190px;
+    width: 85%;
+    background-color: lightgreen;
+    margin: 0 auto;
+    z-index: 998;
+    text-align: center;
+}
+/* SECTION VIDEO UNI */
+section.video{
+    position: relative;
+    height: 673px;
+    background-color: yellowgreen;
+}
+section.video .container.text{
+    height: 100%;
+    background-color: gray;
+    opacity: 0.5;
+}
+section.video .container.videolink{
+    position: absolute;
+    height: 673px;
+    width: 100%;
+    background-color: rgba(255, 255, 255);
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+section.video .container.videolink .text{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+/* Feature */
+section.feature{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    height: 375px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* FOOTER */
+footer section.navbuttons{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    width: 70px;
+    height: 150px;
+    font-size: 40px;
+    padding: 5px;
+}
+footer section.navbuttons a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border-radius: 50%;
+    right: 100%;
+    bottom: 100%;
+}
+footer section.copyright{
+    background-color: #00376a;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
